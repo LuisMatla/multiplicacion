@@ -42,3 +42,10 @@ Thumbs.db
 # But allow .asm files
 !*.X/*.asm
 
+# Allow images
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!images/
+

@@ -174,6 +174,51 @@ El programa configura los siguientes fusibles:
 - **LVP:** Deshabilitado (Low Voltage Programming OFF)
 - **CP:** Deshabilitado (Code Protection OFF)
 
+## 🖥️ Simulación del Circuito
+
+A continuación se muestra el circuito simulado en **Proteus ISIS**:
+
+![Circuito Simulado](images/circuito_simulado.png)
+
+**Descripción del Circuito Simulado:**
+
+El circuito muestra el microcontrolador **PIC16F877A** conectado a:
+
+- **8 LEDs:** Conectados al PORTB (RB0-RB7) con resistencias limitadoras de 220Ω. Los LEDs muestran el resultado de la multiplicación por 5 en formato binario.
+
+- **4 DIP Switches o Interruptores:** Conectados al PORTC (RC0-RC3), permitiendo configurar el valor de entrada de 4 bits (0-15).
+
+**Componentes del Circuito:**
+- Microcontrolador PIC16F877A (U1)
+- 8 LEDs para visualizar el resultado
+- 8 Resistencias de 220Ω para los LEDs
+- 4 DIP Switches para la entrada
+- Cristal oscilador 4MHz con capacitores
+- Alimentación +5V y GND
+
+## ✅ Sistema Funcionando
+
+A continuación se muestra el circuito físico montado en protoboard y funcionando correctamente:
+
+![Sistema Funcionando](images/sistema_funcionando.png)
+
+**Descripción del Sistema Físico:**
+
+El circuito está montado en una protoboard y muestra:
+
+- **Microcontrolador PIC16F877A:** Montado en el centro de la protoboard con sus 40 pines conectados correctamente.
+
+- **Cristal Oscilador 4MHz:** Conectado a los pines 13 y 14 del PIC, con dos capacitores cerámicos de 22pF conectados a tierra.
+
+- **8 LEDs:** Conectados al PORTB (RB0-RB7) del PIC, cada uno con su resistencia limitadora de 220Ω. Los LEDs se encienden según el resultado de la multiplicación, mostrando el valor en formato binario.
+
+- **DIP Switch de 4 Posiciones:** Conectado al PORTC (RC0-RC3) del PIC, permitiendo configurar el valor de entrada de 4 bits (0-15).
+
+- **Conexiones de Alimentación:** Cables rojo y negro conectados a los rieles de alimentación de la protoboard (+5V y GND).
+
+**Estado del Sistema:**
+El sistema está funcionando correctamente, leyendo el valor de entrada del PORTC, multiplicándolo por 5 mediante sumas repetidas, y mostrando el resultado en los LEDs del PORTB.
+
 ## 📊 Tabla de Valores
 
 | Entrada (PORTC) | Decimal | Resultado (PORTB) | Decimal | Verificación |
