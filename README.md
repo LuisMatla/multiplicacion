@@ -221,9 +221,11 @@ El programa configura los siguientes fusibles:
 - Se utiliza una **variable temporal** (TEMP) para almacenar el valor de entrada
 - El rango de entrada es de 0 a 15 (4 bits), y el resultado máximo es 75 (8 bits)
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 **Luis Fernando Contreras Matla.**
+
+**Samuel Obed García Velandia.**
 
 ## 📚 Información Académica
 
